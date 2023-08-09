@@ -26,7 +26,7 @@ while True:
     # Draw rectangle around the faces and print confidence score
     for (x, y, w, h), weight in zip(faces, levelWeights):
         cv2.rectangle(img, (x, y), (x+w, y+h), (0, 255, 0), 2)
-        cv2.putText(img, f"{weight}", (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (36,255,12), 2)
+    #    cv2.putText(img, f"{weight}", (x, y-10), cv2.FONT_HERSHEY_SIMPLEX, 0.9, (36,255,12), 2)
     
     # Display the output
     cv2.imshow('Face Detection', img)
